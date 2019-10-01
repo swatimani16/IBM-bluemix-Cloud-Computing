@@ -1,0 +1,7 @@
+---
+applications:
+ - name: swatiapp12345
+   random-route: true
+   memory: 128M
+   services:
+    - Db2-5i

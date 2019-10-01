@@ -1,0 +1,6 @@
+Flask
+ibm-db
+numpy
+datetime
+timezonefinder
+pytz

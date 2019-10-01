@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cluster</title>
+</head>
+<body>
+<table border=1>
+    {% for r in data%}
+    <tr>
+        <td>{{r["time"]}}</td>
+        <td>{{r["latitude"]}}</td>
+        <td>{{r["longitude"]}}</td>
+        <td>{{r["depth"]}}</td>
+        <td>{{r["mag"]}}</td>
+        <td>{{r["magtype"]}}</td>
+        <td>{{r["nst"]}}</td>
+        <td>{{r["gap"]}}</td>
+        <td>{{r["dmin"]}}</td>
+        <td>{{r["rms"]}}</td>
+        <td>{{r["net"]}}</td>
+        <td>{{r["id"]}}</td>
+        <td>{{r["updated"]}}</td>
+        <td>{{r["place"]}}</td>
+        <td>{{r["type"]}}</td>
+        <td>{{r["horizontal"]}}</td>
+        <td>{{r["deptherror"]}}</td>
+        <td>{{r["magrerror"]}}</td>
+        <td>{{r["magnst"]}}</td>
+        <td>{{r["status"]}}</td>
+        <td>{{r["location"]}}</td>
+        <td>{{r["magsource"]}}</td>
+    </tr>
+    {%endfor%}
+</table>
+{% if count>count1%}
+Night Time
+{% else%}
+morning time
+{%endif%}
+<h4>Number of Earthquakes in Night:{{count}}</h4>
+<h4>Number of Earthquakes in the Daytime:{{count1}}</h4>
+</body>
+</html>
+</body>
+</html>
